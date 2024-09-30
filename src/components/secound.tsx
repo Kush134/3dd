@@ -4,6 +4,7 @@ import Lamborghini from "./Models/Lamborghini Aventador J"
 import Scene from "./Models/Autobianchi Stellina"
 import Maserati from "./Models/Maserati MC20"
 import Maserati2 from "./Models/Maserati"
+import truck from "./Models/Truck"
 import { Leva, levaStore, useControls, button } from 'leva'
 import { Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import { Model, ModelProps, models } from './Models/model'
@@ -38,6 +39,12 @@ export default function App() {
     },
     "Maserati2": {
       Model: Maserati2,
+      interior: "#000000",
+      exterior: "#960000",
+      Wheel:"black",
+    },
+    "Truck": {
+      Model: truck,
       interior: "#000000",
       exterior: "#960000",
       Wheel:"black",
